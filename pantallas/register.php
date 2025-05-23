@@ -1,5 +1,5 @@
 <?php
-require '../conexion/config.php';
+require '../config/conexion.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $nombre = $_POST['nombre'];
@@ -26,17 +26,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <h1>Registrate</h1>
     <form method="POST" enctype="multipart/form-data">
         <label for="nombre">Usuario</label>
-        <input type="text" name="nombre" id="nombre" placeholder="Username" required>
+        <input type="text" name="nombre" id="nombre" placeholder="Usuario" required>
 
         <label for="password">Contraseña</label>
         <input type="password" name="password" id="password" placeholder="Password" required>
 
-        <label for="telefono$telefono">Correo electrónico</label>
-        <input type="telefono$telefono" name="telefono$telefono" id="telefono$telefono" placeholder="Correo electrónico" required>
-        <div id="telefono$telefono-error" class="error-msg"></div>
+        <label for="telefono">Correo electrónico</label>
+        <input type="number" name="telefono" id="telefono" placeholder="Nro Contacto" required>
 
-        <label for="direccion">Nombres</label>
-        <input type="text" name="direccion" id="direccion" placeholder="Nombres" required>
+        <label for="direccion">Direccion</label>
+        <input type="text" name="direccion" id="direccion" placeholder="Direccion" required>
 
         <button type="submit">Registrarse</button>
     </form>
