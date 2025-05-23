@@ -24,13 +24,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Zidkenu</title>
+    <title>Login - Biblioteca</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <div class="container">
         <div>
-            <img class="logo" src="./assets/img/zidkenu_logov2.jfif" alt="">
+            <img class="logo" src="./assets/img/logo.png" alt="">
         </div>
         <h1>Iniciar sesión - Biblioteca</h1>
         <a href="#" class="oauth-btn"><img src="./assets/img/google.png" alt="Google">Iniciar sesión con Google</a>
