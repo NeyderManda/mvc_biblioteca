@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $direccion = $_POST['direccion'];
 
     // Insertar usuario
-    $stmt = $pdo->prepare("INSERT INTO users (nombre, password, telefono, direccion) VALUES (?, ?, ?, ?)");
+    $stmt = $pdo->prepare("INSERT INTO usuario (nombre, password, telefono, direccion) VALUES (?, ?, ?, ?)");
     $stmt->execute([$nombre, $password, $telefono, $direccion]);
 
     header("Location: ../login.php");
