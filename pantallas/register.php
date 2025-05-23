@@ -21,7 +21,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <title>Registro en Biblioteca</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
-
 <div class="container">
     <h1>Registrate</h1>
     <form method="POST" enctype="multipart/form-data">
@@ -31,8 +30,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <label for="password">Contraseña</label>
         <input type="password" name="password" id="password" placeholder="Password" required>
 
-        <label for="telefono">Telefono</label>
-        <input type="number" name="telefono" id="telefono" placeholder="Nro Contacto" required>
+        <label for="telefono">Direccion</label>
+        <input type="number" name="telefono" id="telefono" placeholder="Telefono" required>
 
         <label for="direccion">Direccion</label>
         <input type="text" name="direccion" id="direccion" placeholder="Direccion" required>
